@@ -1,0 +1,9 @@
+javascript object vs json
+
+ 
+1->json is a string format and js object is an object
+2-> We can also send array in json format
+3->undefined,function can not be sent into json 
+
+
+json.stringify is use to translate your js object/data into jsonstring making it suitbale for travelling through mediums  and after that express.json is used to convert the json strinf data into its original form 
