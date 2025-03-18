@@ -6,4 +6,14 @@ javascript object vs json
 3->undefined,function can not be sent into json 
 
 
-json.stringify is use to translate your js object/data into jsonstring making it suitbale for travelling through mediums  and after that express.json is used to convert the json strinf data into its original form 
+json.stringify is use to translate your js object/data into jsonstring making it suitbale for travelling through mediums  and after that express.json is used to convert the json strinf data into its js object form 
+
+
+app.use alag tareeke se use hota h ->keval initial strings of routes match karta h baki soch leta h ki nested mei mil jayega
+app.use can use everything put,post,delete
+
+
+app.put/app.get/app.post/app.delete -> alag tareeke se match hota h exactly wesa jesa hum sochte h poori poori route ki string match karta h 
+
+why we use app.use(Express.json())
+why we use JSON.stringify()
