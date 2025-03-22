@@ -69,6 +69,20 @@ app.patch("/admin",Auth,(req,res)=>{
         }
       
 })
+app.get('/user',(req,res)=>{
+    res.send(AddToCart)
+})
+app.post("/user/:id",(req,res)=>{
+    const id=parseInt(req.params.id);
+    const fooditem=FoodMenu.find(item=>item.id===id);
+    if(fooditem!=-1){
+        AddToCart.push(fooditem);
+     res.status(200).send('item added successfully')
+    }
+    else{
+res.send("item not added")
+    }
+})
 app.listen(3000,()=>{
     console.log("Listening at port 3000")
 })
